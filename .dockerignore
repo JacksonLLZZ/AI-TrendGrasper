@@ -1,0 +1,11 @@
+.git
+.gitignore
+__pycache__
+*.pyc
+*.pyo
+.venv
+venv
+.env
+.DS_Store
+app/data/items.json
+app/data/feedback.jsonl

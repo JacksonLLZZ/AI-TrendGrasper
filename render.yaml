@@ -1,0 +1,20 @@
+# Render 蓝图配置（https://render.com）
+# 用法：把仓库推送到 GitHub 后，在 Render 新建 Blueprint 并指向本文件。
+services:
+  - type: web
+    name: ai-trend-radar
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      # 敏感变量在 Render 控制台填写，不写入仓库
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: LLM_API_KEY
+        sync: false
+      - key: LLM_BASE_URL
+        value: https://api.openai.com/v1
+      - key: LLM_MODEL
+        value: gpt-4o-mini

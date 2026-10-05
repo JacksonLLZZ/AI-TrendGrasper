@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 趋势雷达 · 内部看板</title>
+  <meta name="description" content="自动聚合 AIGC 前沿项目与动态的结构化趋势看板" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">◈</span>
+      <div class="brand-text">
+        <h1>AI 趋势雷达</h1>
+        <p class="brand-sub">AIGC 前沿项目 · 结构化看板</p>
+      </div>
+    </div>
+
+    <div class="topbar-search">
+      <input id="search-input" type="search" placeholder="搜索项目名 / 亮点 / 标签 / 分类…" autocomplete="off" />
+    </div>
+
+    <div class="topbar-actions">
+      <div class="meta-info">
+        <span class="meta-dot" id="meta-dot"></span>
+        <span id="meta-updated">加载中…</span>
+      </div>
+      <button id="btn-settings" class="btn btn-ghost" type="button">分区设置</button>
+      <button id="btn-refresh" class="btn btn-ghost" type="button" title="重新拉取数据">刷新</button>
+    </div>
+  </header>
+
+  <section id="settings-panel" class="settings-panel" hidden>
+    <div class="settings-inner">
+      <h2>分区设置</h2>
+      <p class="settings-hint">勾选需要展示的分区，并用 ↑ ↓ 调整顺序。设置会保存在浏览器本地。</p>
+      <ul id="section-list" class="section-list"></ul>
+      <button id="btn-settings-reset" class="btn btn-ghost" type="button">恢复默认</button>
+    </div>
+  </section>
+
+  <main id="main">
+    <section class="board-section" id="sec-overview">
+      <div class="section-head">
+        <div>
+          <h2>趋势总览</h2>
+          <p class="section-desc">当前收录规模与内容分布</p>
+        </div>
+      </div>
+      <div class="stats-grid" id="stats-grid"></div>
+      <div class="overview-panels">
+        <div class="panel">
+          <h3>知识领域分布（一级分类）</h3>
+          <div id="domain-bars" class="bars"></div>
+        </div>
+        <div class="panel">
+          <h3>各领域热门技术关键词（二级）</h3>
+          <div id="domain-tags" class="domain-groups"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="board-section" id="sec-tech">
+      <div class="section-head">
+        <div>
+          <h2>技术前沿</h2>
+          <p class="section-desc">面向研发：按技术栈筛选，关注热度与工程成熟度</p>
+        </div>
+        <span class="count-badge" id="tech-count">0</span>
+      </div>
+      <div class="toolbar">
+        <div class="chip-group" id="tech-tags"></div>
+        <div class="toolbar-right">
+          <select id="tech-domain" class="select">
+            <option value="">全部知识领域</option>
+          </select>
+          <select id="tech-sort" class="select">
+            <option value="stars">按 Stars 排序</option>
+            <option value="delta">按 7 日增速排序</option>
+            <option value="updated">按最近更新排序</option>
+          </select>
+          <select id="tech-maturity" class="select">
+            <option value="">全部成熟度</option>
+            <option value="production">生产级</option>
+            <option value="usable">可用</option>
+            <option value="experimental">实验性</option>
+            <option value="unknown">未知</option>
+          </select>
+        </div>
+      </div>
+      <div class="card-grid" id="tech-grid"></div>
+    </section>
+
+    <section class="board-section" id="sec-product">
+      <div class="section-head">
+        <div>
+          <h2>产品趋势</h2>
+          <p class="section-desc">面向产品：按赛道筛选，关注应用场景与趋势方向</p>
+        </div>
+        <span class="count-badge" id="product-count">0</span>
+      </div>
+      <div class="toolbar">
+        <div class="toolbar-right">
+          <select id="product-domain" class="select">
+            <option value="">全部知识领域</option>
+          </select>
+          <select id="product-trend" class="select">
+            <option value="">全部趋势</option>
+            <option value="rising">上升</option>
+            <option value="stable">平稳</option>
+            <option value="cooling">降温</option>
+            <option value="unknown">未知</option>
+          </select>
+        </div>
+      </div>
+      <div class="card-grid" id="product-grid"></div>
+    </section>
+
+    <section class="board-section" id="sec-favorites">
+      <div class="section-head">
+        <div>
+          <h2>我的收藏</h2>
+          <p class="section-desc">研发的「待调研清单」/ 产品的「机会库」</p>
+        </div>
+        <span class="count-badge" id="fav-count">0</span>
+      </div>
+      <div class="card-grid" id="fav-grid"></div>
+    </section>
+
+    <section id="detail-view" class="detail-view" hidden></section>
+
+    <div id="empty-state" class="empty-state" hidden>没有匹配的内容，试试调整筛选条件或搜索关键词。</div>
+  </main>
+
+  <footer class="footer">
+    <span id="footer-note">数据说明加载中…</span>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

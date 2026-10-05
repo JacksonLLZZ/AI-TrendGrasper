@@ -1,0 +1,716 @@
+[
+  {
+    "id": "github:langchain-ai/langchain",
+    "source": "github",
+    "full_name": "langchain-ai/langchain",
+    "name": "langchain",
+    "url": "https://github.com/langchain-ai/langchain",
+    "homepage": "https://python.langchain.com",
+    "description": "Build context-aware reasoning applications",
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "llm",
+      "agents",
+      "rag",
+      "python"
+    ],
+    "stars": 96400,
+    "forks": 15600,
+    "stars_delta_7d": 320,
+    "last_updated": "2026-10-04T12:00:00Z",
+    "summary": "构建 LLM 应用的主流编排框架，覆盖 Agent 与 RAG 全链路。",
+    "highlights": [
+      "统一封装主流大模型与工具调用，生态集成最广",
+      "内置 Agent / RAG / 记忆等常用链路，开箱可跑"
+    ],
+    "tags": [
+      "Agent",
+      "RAG"
+    ],
+    "maturity": "production",
+    "audience": [
+      "technical",
+      "product"
+    ],
+    "product_use_case": "可作为快速验证 AI 助手类产品原型的底层框架。",
+    "trend": "stable",
+    "has_readme": true,
+    "extraction": {
+      "status": "success",
+      "model": "gpt-4o-mini",
+      "generated_at": "2026-10-05T08:00:00Z",
+      "confidence": 0.92,
+      "retries": 0
+    },
+    "domain": "Agent 与自动化"
+  },
+  {
+    "id": "github:vllm-project/vllm",
+    "source": "github",
+    "full_name": "vllm-project/vllm",
+    "name": "vllm",
+    "url": "https://github.com/vllm-project/vllm",
+    "homepage": "https://docs.vllm.ai",
+    "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [
+      "llm",
+      "inference",
+      "serving",
+      "gpu"
+    ],
+    "stars": 48200,
+    "forks": 7600,
+    "stars_delta_7d": 540,
+    "last_updated": "2026-10-04T20:30:00Z",
+    "summary": "高吞吐 LLM 推理与服务引擎，PagedAttention 显著降低显存占用。",
+    "highlights": [
+      "吞吐相比主流方案提升数倍，显存效率突出",
+      "兼容 OpenAI 接口，迁移成本低"
+    ],
+    "tags": [
+      "推理加速"
+    ],
+    "maturity": "production",
+    "audience": [
+      "technical"
+    ],
+    "product_use_case": "适合需要自建大模型服务、控制推理成本的产品团队。",
+    "trend": "rising",
+    "has_readme": true,
+    "extraction": {
+      "status": "success",
+      "model": "gpt-4o-mini",
+      "generated_at": "2026-10-05T08:00:00Z",
+      "confidence": 0.95,
+      "retries": 0
+    },
+    "domain": "推理与部署"
+  },
+  {
+    "id": "github:ollama/ollama",
+    "source": "github",
+    "full_name": "ollama/ollama",
+    "name": "ollama",
+    "url": "https://github.com/ollama/ollama",
+    "homepage": "https://ollama.com",
+    "description": "Get up and running with OpenAI gpt-oss, Llama, Gemma and other large language models",
+    "language": "Go",
+    "license": "MIT",
+    "topics": [
+      "llm",
+      "llama",
+      "inference",
+      "local"
+    ],
+    "stars": 112000,
+    "forks": 8900,
+    "stars_delta_7d": 410,
+    "last_updated": "2026-10-03T18:10:00Z",
+    "summary": "一条命令在本地跑起主流大模型，极大降低部署门槛。",
+    "highlights": [
+      "命令行一键拉取与运行模型，几乎零配置",
+      "内置模型库与 GPU 加速，适合本地验证"
+    ],
+    "tags": [
+      "LLM",
+      "推理加速"
+    ],
+    "maturity": "production",
+    "audience": [
+      "technical",
+      "product"
+    ],
+    "product_use_case": "适合在无云端依赖的前提下快速验证模型能力。",
+    "trend": "rising",
+    "has_readme": true,
+    "extraction": {
+      "status": "success",
+      "model": "gpt-4o-mini",
+      "generated_at": "2026-10-05T08:00:00Z",
+      "confidence": 0.9,
+      "retries": 0
+    },
+    "domain": "推理与部署"
+  },
+  {
+    "id": "github:ggml-org/llama.cpp",
+    "source": "github",
+    "full_name": "ggml-org/llama.cpp",
+    "name": "llama.cpp",
+    "url": "https://github.com/ggml-org/llama.cpp",
+    "homepage": null,
+    "description": "LLM inference in C/C++ with minimal dependencies and maximum portability",
+    "language": "C++",
+    "license": "MIT",
+    "topics": [
+      "llm",
+      "inference",
+      "quantization",
+      "cpp"
+    ],
+    "stars": 82500,
+    "forks": 12300,
+    "stars_delta_7d": 210,
+    "last_updated": "2026-10-04T09:45:00Z",
+    "summary": "纯 C/C++ 的 LLM 推理实现，量化后在消费级硬件上也能跑。",
+    "highlights": [
+      "支持多种量化格式，CPU 即可推理",
+      "跨平台可移植，端侧部署首选之一"
+    ],
+    "tags": [
+      "推理加速",
+      "量化"
+    ],
+    "maturity": "production",
+    "audience": [
+      "technical"
+    ],
+    "product_use_case": "适合端侧 / 私有化场景的模型部署需求。",
+    "trend": "stable",
+    "has_readme": true,
+    "extraction": {
+      "status": "success",
+      "model": "gpt-4o-mini",
+      "generated_at": "2026-10-05T08:00:00Z",
+      "confidence": 0.93,
+      "retries": 0
+    },
+    "domain": "推理与部署"
+  },
+  {
+    "id": "github:langgenius/dify",
+    "source": "github",
+    "full_name": "langgenius/dify",
+    "name": "dify",
+    "url": "https://github.com/langgenius/dify",
+    "homepage": "https://dify.ai",
+    "description": "Production-ready platform for agentic workflow development",
+    "language": "TypeScript",
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "workflow",
+      "rag",
+      "llmops"
+    ],
+    "stars": 73600,
+    "forks": 11200,
+    "stars_delta_7d": 610,
+    "last_updated": "2026-10-04T15:20:00Z",
+    "summary": "开箱即用的 Agent 工作流平台，可视化编排 + 内置 RAG 与可观测。",
+    "highlights": [
+      "拖拽式编排工作流，非研发也能上手",
+      "内置知识库、日志与标注，接近生产可用"
+    ],
+    "tags": [
+      "Agent",
+      "工作流编排"
+    ],
+    "maturity": "production",
+    "audience": [
+      "technical",
+      "product"
+    ],
+    "product_use_case": "适合快速搭建企业级 AI 应用与内部智能助手。",
+    "trend": "rising",
+    "has_readme": true,
+    "extraction": {
+      "status": "success",
+      "model": "gpt-4o-mini",
+      "generated_at": "2026-10-05T08:00:00Z",
+      "confidence": 0.94,
+      "retries": 0
+    },
+    "domain": "Agent 与自动化"
+  },
+  {
+    "id": "github:open-webui/open-webui",
+    "source": "github",
+    "full_name": "open-webui/open-webui",
+    "name": "open-webui",
+    "url": "https://github.com/open-webui/open-webui",
+    "homepage": "https://openwebui.com",
+    "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+    "language": "TypeScript",
+    "license": "BSD-3-Clause",
+    "topics": [
+      "llm",
+      "ui",
+      "ollama",
+      "self-hosted"
+    ],
+    "stars": 77800,
+    "forks": 9200,
+    "stars_delta_7d": 380,
+    "last_updated": "2026-10-04T11:05:00Z",
+    "summary": "可自托管的类 ChatGPT 界面，兼容多种模型后端与知识库。",
+    "highlights": [
+      "开源自托管，数据不出内网",
+      "支持多模型、RAG 与多用户权限"
+    ],
+    "tags": [
+      "LLM",
+      "RAG"
+    ],
+    "maturity": "production",
+    "audience": [
+      "product",
+      "technical"
+    ],
+    "product_use_case": "适合作为企业内部统一 AI 对话入口。",
+    "trend": "rising",
+    "has_readme": true,
+    "extraction": {
+      "status": "success",
+      "model": "gpt-4o-mini",
+      "generated_at": "2026-10-05T08:00:00Z",
+      "confidence": 0.91,
+      "retries": 0
+    },
+    "domain": "企业应用"
+  },
+  {
+    "id": "github:comfyanonymous/ComfyUI",
+    "source": "github",
+    "full_name": "comfyanonymous/ComfyUI",
+    "name": "ComfyUI",
+    "url": "https://github.com/comfyanonymous/ComfyUI",
+    "homepage": "https://www.comfy.org",
+    "description": "The most powerful and modular diffusion model GUI and backend",
+    "language": "Python",
+    "license": "GPL-3.0",
+    "topics": [
+      "diffusion",
+      "stable-diffusion",
+      "image-generation",
+      "gui"
+    ],
+    "stars": 89200,
+    "forks": 10200,
+    "stars_delta_7d": 470,
+    "last_updated": "2026-10-04T22:00:00Z",
+    "summary": "节点式扩散模型工作流工具，图像生成的可视化编排标杆。",
+    "highlights": [
+      "节点化工作流，复杂生成流程可复用与分享",
+      "插件生态庞大，覆盖主流生成模型"
+    ],
+    "tags": [
+      "扩散模型",
+      "工作流编排"
+    ],
+    "maturity": "production",
+    "audience": [
+      "product",
+      "technical"
+    ],
+    "product_use_case": "适合内容生成、设计辅助类产品的图像能力验证。",
+    "trend": "rising",
+    "has_readme": true,
+    "extraction": {
+      "status": "success",
+      "model": "gpt-4o-mini",
+      "generated_at": "2026-10-05T08:00:00Z",
+      "confidence": 0.9,
+      "retries": 0
+    },
+    "domain": "多模态生成"
+  },
+  {
+    "id": "github:microsoft/autogen",
+    "source": "github",
+    "full_name": "microsoft/autogen",
+    "name": "autogen",
+    "url": "https://github.com/microsoft/autogen",
+    "homepage": "https://microsoft.github.io/autogen",
+    "description": "A programming framework for agentic AI",
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "multi-agent",
+      "llm",
+      "framework"
+    ],
+    "stars": 48200,
+    "forks": 7100,
+    "stars_delta_7d": 160,
+    "last_updated": "2026-10-02T16:40:00Z",
+    "summary": "微软开源的多智能体编程框架，强调可控的协作与对话编排。",
+    "highlights": [
+      "多 Agent 协作模式成熟，事件驱动可扩展",
+      "与 Azure / OpenAI 生态衔接顺畅"
+    ],
+    "tags": [
+      "Agent",
+      "工具调用"
+    ],
+    "maturity": "usable",
+    "audience": [
+      "technical"
+    ],
+    "product_use_case": "适合需要多角色协作的复杂自动化场景。",
+    "trend": "stable",
+    "has_readme": true,
+    "extraction": {
+      "status": "success",
+      "model": "gpt-4o-mini",
+      "generated_at": "2026-10-05T08:00:00Z",
+      "confidence": 0.88,
+      "retries": 0
+    },
+    "domain": "Agent 与自动化"
+  },
+  {
+    "id": "github:crewAIInc/crewAI",
+    "source": "github",
+    "full_name": "crewAIInc/crewAI",
+    "name": "crewAI",
+    "url": "https://github.com/crewAIInc/crewAI",
+    "homepage": "https://crewai.com",
+    "description": "Framework for orchestrating role-playing, autonomous AI agents",
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "multi-agent",
+      "workflow",
+      "automation"
+    ],
+    "stars": 39800,
+    "forks": 5400,
+    "stars_delta_7d": 290,
+    "last_updated": "2026-10-04T07:30:00Z",
+    "summary": "以「角色扮演」组织多智能体的协作框架，上手快、概念直观。",
+    "highlights": [
+      "角色 / 任务 / 流程三要素抽象清晰",
+      "适合快速搭建自动化协作流程"
+    ],
+    "tags": [
+      "Agent",
+      "工作流编排"
+    ],
+    "maturity": "usable",
+    "audience": [
+      "technical",
+      "product"
+    ],
+    "product_use_case": "适合把重复性业务流程改造成 Agent 协作。",
+    "trend": "rising",
+    "has_readme": true,
+    "extraction": {
+      "status": "success",
+      "model": "gpt-4o-mini",
+      "generated_at": "2026-10-05T08:00:00Z",
+      "confidence": 0.87,
+      "retries": 0
+    },
+    "domain": "Agent 与自动化"
+  },
+  {
+    "id": "github:run-llama/llama_index",
+    "source": "github",
+    "full_name": "run-llama/llama_index",
+    "name": "llama_index",
+    "url": "https://github.com/run-llama/llama_index",
+    "homepage": "https://docs.llamaindex.ai",
+    "description": "LlamaIndex is the leading framework for building LLM-powered agents over your data",
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "rag",
+      "retrieval",
+      "embedding",
+      "llm"
+    ],
+    "stars": 42300,
+    "forks": 6100,
+    "stars_delta_7d": 140,
+    "last_updated": "2026-10-03T14:15:00Z",
+    "summary": "面向私有数据的 RAG 与 Agent 框架，检索链路最完整。",
+    "highlights": [
+      "数据连接器与索引能力丰富，开箱即用",
+      "检索策略可插拔，便于调优"
+    ],
+    "tags": [
+      "RAG",
+      "Embedding"
+    ],
+    "maturity": "production",
+    "audience": [
+      "technical"
+    ],
+    "product_use_case": "适合需要把企业知识库接入问答产品的场景。",
+    "trend": "stable",
+    "has_readme": true,
+    "extraction": {
+      "status": "success",
+      "model": "gpt-4o-mini",
+      "generated_at": "2026-10-05T08:00:00Z",
+      "confidence": 0.9,
+      "retries": 0
+    },
+    "domain": "检索与知识"
+  },
+  {
+    "id": "github:milvus-io/milvus",
+    "source": "github",
+    "full_name": "milvus-io/milvus",
+    "name": "milvus",
+    "url": "https://github.com/milvus-io/milvus",
+    "homepage": "https://milvus.io",
+    "description": "A high-performance, cloud-native vector database built for scalable similarity search",
+    "language": "Go",
+    "license": "Apache-2.0",
+    "topics": [
+      "vector-database",
+      "embedding",
+      "similarity-search",
+      "cloud-native"
+    ],
+    "stars": 35200,
+    "forks": 3200,
+    "stars_delta_7d": 90,
+    "last_updated": "2026-10-04T13:50:00Z",
+    "summary": "云原生向量数据库，面向大规模相似度检索场景。",
+    "highlights": [
+      "水平扩展能力强，支撑亿级向量",
+      "生态完善，与主流 RAG 框架集成度高"
+    ],
+    "tags": [
+      "向量数据库",
+      "Embedding"
+    ],
+    "maturity": "production",
+    "audience": [
+      "technical"
+    ],
+    "product_use_case": "适合作为知识检索类产品的底层存储。",
+    "trend": "stable",
+    "has_readme": true,
+    "extraction": {
+      "status": "success",
+      "model": "gpt-4o-mini",
+      "generated_at": "2026-10-05T08:00:00Z",
+      "confidence": 0.89,
+      "retries": 0
+    },
+    "domain": "数据与向量"
+  },
+  {
+    "id": "github:openai/whisper",
+    "source": "github",
+    "full_name": "openai/whisper",
+    "name": "whisper",
+    "url": "https://github.com/openai/whisper",
+    "homepage": null,
+    "description": "Robust Speech Recognition via Large-Scale Weak Supervision",
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "speech",
+      "asr",
+      "tts",
+      "multimodal"
+    ],
+    "stars": 84200,
+    "forks": 10100,
+    "stars_delta_7d": 75,
+    "last_updated": "2026-09-28T10:00:00Z",
+    "summary": "多语言通用语音识别模型，噪声环境下依然稳定。",
+    "highlights": [
+      "支持近百种语言，识别鲁棒性强",
+      "开源权重可本地部署与微调"
+    ],
+    "tags": [
+      "语音"
+    ],
+    "maturity": "production",
+    "audience": [
+      "technical",
+      "product"
+    ],
+    "product_use_case": "适合会议转写、语音交互类产品的语音能力底座。",
+    "trend": "cooling",
+    "has_readme": true,
+    "extraction": {
+      "status": "success",
+      "model": "gpt-4o-mini",
+      "generated_at": "2026-10-05T08:00:00Z",
+      "confidence": 0.91,
+      "retries": 0
+    },
+    "domain": "语音与音频"
+  },
+  {
+    "id": "github:example-org/edge-llm-runtime",
+    "source": "github",
+    "full_name": "example-org/edge-llm-runtime",
+    "name": "edge-llm-runtime",
+    "url": "https://github.com/example-org/edge-llm-runtime",
+    "homepage": null,
+    "description": "Lightweight runtime for deploying small LLMs on edge devices",
+    "language": "Rust",
+    "license": "MIT",
+    "topics": [
+      "llm",
+      "inference",
+      "edge",
+      "quantization"
+    ],
+    "stars": 1240,
+    "forks": 86,
+    "stars_delta_7d": 44,
+    "last_updated": "2026-10-04T06:20:00Z",
+    "summary": "面向边缘设备的小模型轻量运行时，强调低内存与量化部署。",
+    "highlights": [
+      "暂无 AI 摘要，仅展示原始信息"
+    ],
+    "tags": [
+      "量化",
+      "推理加速"
+    ],
+    "maturity": "unknown",
+    "audience": [],
+    "product_use_case": null,
+    "trend": "unknown",
+    "has_readme": false,
+    "extraction": {
+      "status": "partial",
+      "model": "gpt-4o-mini",
+      "generated_at": "2026-10-05T08:00:00Z",
+      "confidence": 0.35,
+      "retries": 1
+    },
+    "domain": "推理与部署"
+  },
+  {
+    "id": "github:unknown-org/mystery-tool",
+    "source": "github",
+    "full_name": "unknown-org/mystery-tool",
+    "name": "mystery-tool",
+    "url": "https://github.com/unknown-org/mystery-tool",
+    "homepage": null,
+    "description": null,
+    "language": null,
+    "license": null,
+    "topics": [],
+    "stars": 42,
+    "forks": 3,
+    "stars_delta_7d": 0,
+    "last_updated": "2026-09-20T02:00:00Z",
+    "summary": "信息不足，暂无法生成亮点",
+    "highlights": [
+      "暂无描述，信息有限"
+    ],
+    "tags": [
+      "其他"
+    ],
+    "maturity": "unknown",
+    "audience": [],
+    "product_use_case": null,
+    "trend": "unknown",
+    "has_readme": false,
+    "extraction": {
+      "status": "fallback",
+      "model": "rule-based",
+      "generated_at": "2026-10-05T08:00:00Z",
+      "confidence": 0.0,
+      "retries": 1
+    },
+    "domain": "其他"
+  },
+  {
+    "id": "github:OpenDriveLab/UniAD",
+    "source": "github",
+    "full_name": "OpenDriveLab/UniAD",
+    "name": "UniAD",
+    "url": "https://github.com/OpenDriveLab/UniAD",
+    "homepage": "https://opendrivelab.com",
+    "description": "Planning-oriented Autonomous Driving",
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [
+      "autonomous-driving",
+      "end-to-end",
+      "bev",
+      "perception"
+    ],
+    "stars": 3200,
+    "forks": 520,
+    "stars_delta_7d": 65,
+    "last_updated": "2026-10-03T09:20:00Z",
+    "summary": "端到端自动驾驶统一框架，感知、预测与规划一体化建模。",
+    "highlights": [
+      "以规划为导向统一多任务，减少模块间割裂",
+      "BEV 表征 + 端到端训练，学界影响力大"
+    ],
+    "domain": "自动驾驶",
+    "tags": [
+      "端到端",
+      "感知"
+    ],
+    "maturity": "usable",
+    "audience": [
+      "technical"
+    ],
+    "product_use_case": "适合自动驾驶感知 / 规划方向的技术预研参考。",
+    "trend": "rising",
+    "has_readme": true,
+    "extraction": {
+      "status": "success",
+      "model": "gpt-4o-mini",
+      "generated_at": "2026-10-05T08:00:00Z",
+      "confidence": 0.88,
+      "retries": 0
+    }
+  },
+  {
+    "id": "github:Physical-Intelligence/openpi",
+    "source": "github",
+    "full_name": "Physical-Intelligence/openpi",
+    "name": "openpi",
+    "url": "https://github.com/Physical-Intelligence/openpi",
+    "homepage": "https://www.physicalintelligence.company",
+    "description": "Open-source VLA models and runtime for general-purpose robot control",
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [
+      "robotics",
+      "vla",
+      "manipulation",
+      "embodied"
+    ],
+    "stars": 5600,
+    "forks": 430,
+    "stars_delta_7d": 180,
+    "last_updated": "2026-10-05T03:10:00Z",
+    "summary": "开源视觉-语言-动作模型，让机器人听懂指令并完成操作。",
+    "highlights": [
+      "VLA 范式打通自然语言指令与机器人动作",
+      "提供预训练权重，降低具身智能研究门槛"
+    ],
+    "domain": "机器人 / 具身智能",
+    "tags": [
+      "VLA",
+      "具身智能"
+    ],
+    "maturity": "experimental",
+    "audience": [
+      "technical",
+      "product"
+    ],
+    "product_use_case": "适合探索具身智能与自然语言操控机器人的产品方向。",
+    "trend": "rising",
+    "has_readme": true,
+    "extraction": {
+      "status": "success",
+      "model": "gpt-4o-mini",
+      "generated_at": "2026-10-05T08:00:00Z",
+      "confidence": 0.86,
+      "retries": 0
+    }
+  }
+]
